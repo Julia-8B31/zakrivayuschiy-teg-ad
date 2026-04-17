@@ -51,3 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+const okButton = document.querySelector('#ok-button');
+if (okButton) {
+  okButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const dialog = document.getElementById('dialog-floppy');
+    if (dialog) dialog.close();
+  });
+}
