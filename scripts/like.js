@@ -39,3 +39,15 @@ function setButtonText(heart, button) {
     );
   }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const saveBtn = document.querySelector('.save-button');
+  const modalDialog = document.getElementById('dialog-floppy');
+  
+  if (saveBtn && modalDialog) {
+    saveBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modalDialog.showModal();
+    });
+  }
+});
