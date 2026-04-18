@@ -195,7 +195,7 @@ section {
 
 .floppy-svg {
   mix-blend-mode: difference;
-  fill: white;
+  color: white;
   inline-size: 21px;
   block-size: 21px;
   z-index: 1;
@@ -228,14 +228,6 @@ section {
   border: 2px solid var(--accent-color);
 }
 
-.dialog-button {
-  width: 335px;
-  height: 55px;
-  gap: 8px;
-  margin-bottom: 100px;
-  flex-wrap: wrap;
-  z-index: 0;
-}
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);

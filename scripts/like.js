@@ -54,12 +54,4 @@ document.addEventListener('DOMContentLoaded', () => {
       modalDialog.showModal();
     });
   }
-  
-  const okButton = document.getElementById('ok-button');
-  if (okButton && modalDialog) {
-    okButton.addEventListener('click', (e) => {
-      e.preventDefault();
-      modalDialog.close();
-    });
-  }
 });
